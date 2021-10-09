@@ -1,1 +1,2 @@
 This is another sample text file. Cool!
+Except this one has a second line.
