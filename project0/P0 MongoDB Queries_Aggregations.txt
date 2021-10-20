@@ -1,0 +1,52 @@
+//Show the documents that were inserted from Scala:
+db.cars.find().pretty()
+
+//Update the car documents that have MPG value of 0, assuming we know they all get 20 MPG:
+
+db.cars.update( { "MPG" : 0 }, { $set : { "MPG" : 20 } }, { multi : true } )
+
+//Show that there are no longer any cars with 0 MPG:
+
+db.cars.count({"MPG" : 0})
+
+//Let's say I want to add some modern cars to the inventory using the insertMany() method.
+
+db.cars.insertMany( [
+	{"Car": "Ford Fusion", "MPG": 26, "Cylinders": 4, "Displacement": 152, "Horsepower": 173, "Weight": 3472, "Acceleration": 8.9, "Model": 2021, "Origin": "US"},
+	{"Car": "Chevy Malibu", "MPG": 32, "Cylinders": 4, "Displacement": 91, "Horsepower": 160, "Weight": 3126, "Acceleration": 7.8, "Model": 2022, "Origin": "US"},
+	{"Car": "Honda Civic", "MPG": 36, "Cylinders": 4, "Displacement": 122, "Horsepower": 158, "Weight": 2762, "Acceleration": 8.2, "Model": 2022, "Origin": "Japan"},
+	{"Car": "Jeep Grand Cherokee", "MPG": 21, "Cylinders": 4, "Displacement": 220, "Horsepower": 295, "Weight": 4513, "Acceleration": 7, "Model": 2020, "Origin": "Europe"},
+	{"Car": "Hyundai Sonata", "MPG": 29, "Cylinders": 4, "Displacement": 144, "Horsepower": 185, "Weight": 3247, "Acceleration": 6.8, "Model": 2019, "Origin": "South Korea"}
+] )
+
+//Now let's say a car was sold, so it needs to be removed from the inventory.
+
+db.cars.deleteOne({"Car": "Toyota Camry", "Model": 73})
+
+//What if I want to only see the model name and model year of all the cars?
+
+db.cars.aggregate([
+	{ $group: { _id: { CarName: "$Car", ModelYear: "$Model" } } },
+	{ $sort: { "_id.ModelYear": 1 } }
+])
+
+//To find the total weight of every car in the inventory:
+
+db.cars.aggregate([
+	{ $group: { _id: "", totWeight: { $sum: "$Weight" } } },
+	{ $project: { _id: 0, TotalWeight: "$totWeight"} }
+])
+
+//To calculate the average MPG of all the cars:
+
+db.cars.aggregate([
+	{ $group: { _id: "", avgMPG: { $avg: "$MPG" } } },
+	{ $project: { _id: 0, AverageMPG: "$avgMPG"} }
+])
+
+//To calculate how many cars from outside the US there are:
+
+db.cars.aggregate([
+	{ $match: {$or: [{"Origin": "Japan"}, {"Origin": "South Korea"}, {"Origin": "Europe"}] } },
+	{ $count: "Num_Foreign_Cars" }
+])
