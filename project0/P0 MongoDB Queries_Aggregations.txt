@@ -26,8 +26,8 @@ db.cars.deleteOne({"Car": "Toyota Camry", "Model": 73})
 //What if I want to only see the model name and model year of all the cars?
 
 db.cars.aggregate([
-	{ $group: { _id: { CarName: "$Car", ModelYear: "$Model" } } },
-	{ $sort: { "_id.ModelYear": 1 } }
+	{ $group: { _id: { ModelName: "$Car", ModelYear: "$Model" } } },
+	{ $sort: { "_id.ModelYear": -1 } }
 ])
 
 //To find the total weight of every car in the inventory:

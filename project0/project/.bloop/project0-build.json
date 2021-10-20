@@ -2,15 +2,15 @@
     "version": "1.4.0",
     "project": {
         "name": "project0-build",
-        "directory": "C:\\Users\\jthom\\Documents\\Revature Training\\project0\\project",
-        "workspaceDir": "C:\\Users\\jthom\\Documents\\Revature Training\\project0\\project",
+        "directory": "C:\\Users\\jthom\\Documents\\Revature Training\\JustinWithamRepo\\project0\\project",
+        "workspaceDir": "C:\\Users\\jthom\\Documents\\Revature Training\\JustinWithamRepo\\project0\\project",
         "sources": [
-            "C:\\Users\\jthom\\Documents\\Revature Training\\project0\\project\\src\\main\\scala-2.12",
-            "C:\\Users\\jthom\\Documents\\Revature Training\\project0\\project\\src\\main\\scala",
-            "C:\\Users\\jthom\\Documents\\Revature Training\\project0\\project\\src\\main\\java",
-            "C:\\Users\\jthom\\Documents\\Revature Training\\project0\\project\\src\\main\\scala-sbt-1.0",
-            "C:\\Users\\jthom\\Documents\\Revature Training\\project0\\project\\target\\scala-2.12\\sbt-1.0\\src_managed\\main",
-            "C:\\Users\\jthom\\Documents\\Revature Training\\project0\\project\\Dependencies.scala"
+            "C:\\Users\\jthom\\Documents\\Revature Training\\JustinWithamRepo\\project0\\project\\src\\main\\scala-2.12",
+            "C:\\Users\\jthom\\Documents\\Revature Training\\JustinWithamRepo\\project0\\project\\src\\main\\scala",
+            "C:\\Users\\jthom\\Documents\\Revature Training\\JustinWithamRepo\\project0\\project\\src\\main\\java",
+            "C:\\Users\\jthom\\Documents\\Revature Training\\JustinWithamRepo\\project0\\project\\src\\main\\scala-sbt-1.0",
+            "C:\\Users\\jthom\\Documents\\Revature Training\\JustinWithamRepo\\project0\\project\\target\\scala-2.12\\sbt-1.0\\src_managed\\main",
+            "C:\\Users\\jthom\\Documents\\Revature Training\\JustinWithamRepo\\project0\\project\\Dependencies.scala"
         ],
         "dependencies": [
             
@@ -102,11 +102,11 @@
             "C:\\Users\\jthom\\.ivy2\\cache\\org.scala-sbt.ivy\\ivy\\jars\\ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar",
             "C:\\Users\\jthom\\.ivy2\\cache\\org.scala-sbt\\zinc-compile_2.12\\jars\\zinc-compile_2.12-1.2.5.jar"
         ],
-        "out": "C:\\Users\\jthom\\Documents\\Revature Training\\project0\\project\\.bloop\\project0-build",
-        "classesDir": "C:\\Users\\jthom\\Documents\\Revature Training\\project0\\project\\.bloop\\project0-build\\scala-2.12\\sbt-1.0\\classes",
+        "out": "C:\\Users\\jthom\\Documents\\Revature Training\\JustinWithamRepo\\project0\\project\\.bloop\\project0-build",
+        "classesDir": "C:\\Users\\jthom\\Documents\\Revature Training\\JustinWithamRepo\\project0\\project\\.bloop\\project0-build\\scala-2.12\\sbt-1.0\\classes",
         "resources": [
-            "C:\\Users\\jthom\\Documents\\Revature Training\\project0\\project\\src\\main\\resources",
-            "C:\\Users\\jthom\\Documents\\Revature Training\\project0\\project\\target\\scala-2.12\\sbt-1.0\\resource_managed\\main"
+            "C:\\Users\\jthom\\Documents\\Revature Training\\JustinWithamRepo\\project0\\project\\src\\main\\resources",
+            "C:\\Users\\jthom\\Documents\\Revature Training\\JustinWithamRepo\\project0\\project\\target\\scala-2.12\\sbt-1.0\\resource_managed\\main"
         ],
         "scala": {
             "organization": "org.scala-lang",
@@ -121,7 +121,7 @@
                 "C:\\Users\\jthom\\.sbt\\boot\\scala-2.12.7\\lib\\scala-reflect.jar",
                 "C:\\Users\\jthom\\.sbt\\boot\\scala-2.12.7\\lib\\scala-xml_2.12-1.0.6.jar"
             ],
-            "analysis": "C:\\Users\\jthom\\Documents\\Revature Training\\project0\\project\\target\\streams\\compile\\bloopAnalysisOut\\$global\\streams\\inc_compile_2.12.zip",
+            "analysis": "C:\\Users\\jthom\\Documents\\Revature Training\\JustinWithamRepo\\project0\\project\\target\\streams\\compile\\bloopAnalysisOut\\$global\\streams\\inc_compile_2.12.zip",
             "setup": {
                 "order": "mixed",
                 "addLibraryToBootClasspath": true,
@@ -190,7 +190,7 @@
             "config": {
                 "home": "C:\\Program Files\\Java\\jdk-11.0.11",
                 "options": [
-                    "-Duser.dir=C:\\Users\\jthom\\Documents\\Revature Training\\project0\\project"
+                    "-Duser.dir=C:\\Users\\jthom\\Documents\\Revature Training\\JustinWithamRepo\\project0\\project"
                 ]
             },
             "mainClass": [
